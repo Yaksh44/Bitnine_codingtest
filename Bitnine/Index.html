@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Angeles Metro Map</title>
+    <style>
+        body {background-color: black;}
+        h1 {text-align: center; color: white;}
+
+        .center {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+            width: 80%;
+            border: 3px solid green;
+            line-height: 150px;
+
+        }
+    </style>
+    <script src="Metro.js"></script>
+</head>
+<body>
+    <h1>
+        Los angeles Metro Map
+    </h1>
+    <div id="map" class="center">
+    </div>  
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjKpkqWfWPTX5uCt-My9FM7WqBjuWvfMM&callback=initMap&v=weekly"
+      defer 
+    ></script>
+</body>
+</html>
